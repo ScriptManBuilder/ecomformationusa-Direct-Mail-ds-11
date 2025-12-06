@@ -127,6 +127,8 @@ export const StatCard = styled.div<{ $background: string }>`
   position: relative;
   overflow: hidden;
   backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
 
   &::before {
     content: '';
@@ -207,15 +209,17 @@ export const StatDescription = styled.p`
   margin-top: 0.5rem;
   opacity: 0.7;
   line-height: 1.6;
+  flex: 1;
 `;
 
 export const StatValue = styled.div`
   font-size: 3.5rem;
   font-weight: 700;
-  margin-top: 1rem;
+  margin-top: auto;
   letter-spacing: -0.02em;
   position: relative;
   display: inline-block;
+  align-self: flex-start;
   
   &::after {
     content: '';
