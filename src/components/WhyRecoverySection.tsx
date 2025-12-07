@@ -76,7 +76,7 @@ const WhyRecoverySection: React.FC = () => {
         <WhyRecoveryTitle>Why Recovery Matters</WhyRecoveryTitle>
         <WhyRecoveryDescription>
           <StatHighlight>30%+ of transactions fail on the first attempt.</StatHighlight>
-          <br /><br />
+        
           Most failures are preventable—soft declines, issuer friction, outdated card data, and processor routing issues. 
           Our decline-salvage platform helps you capture revenue that would otherwise be lost forever.
         </WhyRecoveryDescription>
