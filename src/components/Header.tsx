@@ -81,7 +81,7 @@ const Header: React.FC = () => {
           <NavLink href="#contact" onClick={(e) => handleNavClick(e, '#contact')}>Contact Sales</NavLink>
         </NavLinks>
         <CTAButtons>
-          <Button onClick={handleCustomerCareClick}>Custom Care</Button>
+          <Button onClick={handleCustomerCareClick}>Customer Care</Button>
           <Button $primary onClick={handleButtonClick}>Get Started</Button>
         </CTAButtons>
       </Nav>
