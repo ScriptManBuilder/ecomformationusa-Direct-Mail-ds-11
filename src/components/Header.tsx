@@ -36,9 +36,9 @@ const Header: React.FC = () => {
   const handleButtonClick = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     
-    if (location.pathname === '/support') {
-      return;
-    }
+    // if (location.pathname === '/support') {
+    //   return;
+    // }
     
     if (location.pathname !== '/') {
       navigate('/');
@@ -81,8 +81,8 @@ const Header: React.FC = () => {
           <NavLink href="#contact" onClick={(e) => handleNavClick(e, '#contact')}>Contact Sales</NavLink>
         </NavLinks>
         <CTAButtons>
-          <Button onClick={handleCustomerCareClick}>Merchant Support</Button>
-          <Button $primary onClick={handleButtonClick}>Request Demo</Button>
+          <Button onClick={handleCustomerCareClick}>Custom Care</Button>
+          <Button $primary onClick={handleButtonClick}>Get Started</Button>
         </CTAButtons>
       </Nav>
     </HeaderContainer>
