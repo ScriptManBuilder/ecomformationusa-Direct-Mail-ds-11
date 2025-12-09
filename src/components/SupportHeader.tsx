@@ -114,7 +114,20 @@ const SupportHeader: React.FC = () => {
   };
 
   const handleSupportClick = () => {
-    navigate('/support');
+    if (window.location.pathname === '/support') {
+      const contactForm = document.getElementById('contact-form');
+      if (contactForm) {
+        contactForm.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    } else {
+      navigate('/support');
+      setTimeout(() => {
+        const contactForm = document.getElementById('contact-form');
+        if (contactForm) {
+          contactForm.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 100);
+    }
   };
 
   const handleFaqClick = () => {
