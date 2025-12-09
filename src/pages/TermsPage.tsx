@@ -88,6 +88,20 @@ const TermsPage: React.FC = () => {
           </LegalSection>
 
           <LegalSection>
+            <LegalSectionTitle>Payment Terms</LegalSectionTitle>
+            <LegalParagraph>
+              All products and services offered on this website are sold as a one-time purchase.
+            </LegalParagraph>
+            <LegalList>
+              <LegalListItem>Payments are charged once at the time of purchase</LegalListItem>
+              <LegalListItem>No recurring or automatic billing will occur</LegalListItem>
+              <LegalListItem>You will not be enrolled in a subscription</LegalListItem>
+              <LegalListItem>Payments are processed through secure third-party payment processors</LegalListItem>
+              <LegalListItem>All fees are non-refundable except as required by law or stated in our Refund Policy</LegalListItem>
+            </LegalList>
+          </LegalSection>
+
+          <LegalSection>
             <LegalSectionTitle>Acceptable Use Policy</LegalSectionTitle>
             <LegalParagraph>
               As a merchant using our decline salvage platform, you agree not to use our services for any unlawful or prohibited purpose. Prohibited activities include:
@@ -192,7 +206,7 @@ const TermsPage: React.FC = () => {
           <LegalSection>
             <LegalSectionTitle>Dispute Resolution and Governing Law</LegalSectionTitle>
             <LegalParagraph>
-              These Terms shall be governed by and construed in accordance with the laws of the State of Florida, 
+              These Terms shall be governed by and construed in accordance with the laws of the State of Wyoming, 
               United States, without regard to its conflict of law provisions.
             </LegalParagraph>
             <LegalParagraph style={{ marginTop: '1rem' }}>
