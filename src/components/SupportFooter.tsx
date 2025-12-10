@@ -106,11 +106,21 @@ const SupportFooter: React.FC = () => {
             <SectionTitle>{brandName}</SectionTitle>
             <LinkList>
               <li><FooterLink onClick={() => navigate('/')}>Home</FooterLink></li>
-              <li><FooterLink onClick={() => navigate('/company-info')}>About</FooterLink></li>
+              <li><FooterLink onClick={() => navigate('/about')}>About</FooterLink></li>
               <li><FooterLink onClick={() => {
-                const faqSection = document.querySelector('#faq-section');
-                if (faqSection) {
-                  faqSection.scrollIntoView({ behavior: 'smooth' });
+                if (window.location.pathname === '/support') {
+                  const faqSection = document.querySelector('#faq-section');
+                  if (faqSection) {
+                    faqSection.scrollIntoView({ behavior: 'smooth' });
+                  }
+                } else {
+                  navigate('/support');
+                  setTimeout(() => {
+                    const faqSection = document.querySelector('#faq-section');
+                    if (faqSection) {
+                      faqSection.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }, 100);
                 }
               }}>Faq</FooterLink></li>
             </LinkList>
@@ -120,15 +130,35 @@ const SupportFooter: React.FC = () => {
             <SectionTitle>Customer - Resources</SectionTitle>
             <LinkList>
               <li><FooterLink onClick={() => {
-                const contactForm = document.getElementById('contact-form');
-                if (contactForm) {
-                  contactForm.scrollIntoView({ behavior: 'smooth' });
+                if (window.location.pathname === '/support') {
+                  const contactForm = document.getElementById('contact-form');
+                  if (contactForm) {
+                    contactForm.scrollIntoView({ behavior: 'smooth' });
+                  }
+                } else {
+                  navigate('/support');
+                  setTimeout(() => {
+                    const contactForm = document.getElementById('contact-form');
+                    if (contactForm) {
+                      contactForm.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }, 100);
                 }
               }}>Request Refund</FooterLink></li>
               <li><FooterLink onClick={() => {
-                const contactForm = document.getElementById('contact-form');
-                if (contactForm) {
-                  contactForm.scrollIntoView({ behavior: 'smooth' });
+                if (window.location.pathname === '/support') {
+                  const contactForm = document.getElementById('contact-form');
+                  if (contactForm) {
+                    contactForm.scrollIntoView({ behavior: 'smooth' });
+                  }
+                } else {
+                  navigate('/support');
+                  setTimeout(() => {
+                    const contactForm = document.getElementById('contact-form');
+                    if (contactForm) {
+                      contactForm.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }, 100);
                 }
               }}>Contact</FooterLink></li>
             </LinkList>
@@ -138,15 +168,35 @@ const SupportFooter: React.FC = () => {
             <SectionTitle>Helpful Links</SectionTitle>
             <LinkList>
               <li><FooterLink onClick={() => {
-                const contactForm = document.getElementById('contact-form');
-                if (contactForm) {
-                  contactForm.scrollIntoView({ behavior: 'smooth' });
+                if (window.location.pathname === '/support') {
+                  const contactForm = document.getElementById('contact-form');
+                  if (contactForm) {
+                    contactForm.scrollIntoView({ behavior: 'smooth' });
+                  }
+                } else {
+                  navigate('/support');
+                  setTimeout(() => {
+                    const contactForm = document.getElementById('contact-form');
+                    if (contactForm) {
+                      contactForm.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }, 100);
                 }
               }}>Cancel Order</FooterLink></li>
               <li><FooterLink onClick={() => {
-                const contactForm = document.getElementById('contact-form');
-                if (contactForm) {
-                  contactForm.scrollIntoView({ behavior: 'smooth' });
+                if (window.location.pathname === '/support') {
+                  const contactForm = document.getElementById('contact-form');
+                  if (contactForm) {
+                    contactForm.scrollIntoView({ behavior: 'smooth' });
+                  }
+                } else {
+                  navigate('/support');
+                  setTimeout(() => {
+                    const contactForm = document.getElementById('contact-form');
+                    if (contactForm) {
+                      contactForm.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }, 100);
                 }
               }}>I was charged twice</FooterLink></li>
             </LinkList>
